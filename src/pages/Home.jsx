@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/logo.png';
+import logo from '../assets/Logo.png';
 import bundeslaenderImg from '../assets/bundeslaender.jpg';
 
 export default function Home() {
