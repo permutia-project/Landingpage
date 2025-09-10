@@ -1,18 +1,20 @@
-import React from 'react';
-import logo from '../assets/Logo.png'; // Großgeschrieben!
+// src/pages/Home.jsx
+import Hero from '../components/Hero';
+import InfoSection from '../components/InfoSection';
+import CTA from '../components/CTA';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 function Home() {
   return (
-    <div className="text-center">
-      <img
-        src={logo}
-        alt="Permutia Logo"
-        className="w-16 h-auto mx-auto my-4"
-        style={{ maxWidth: '64px' }} // zusätzlich zur Absicherung
-      />
-      <h1 className="text-3xl font-bold mt-4">
-        Permutia – Lehrer:innen im Bundesländer-Austausch
-      </h1>
+    <div className="flex flex-col min-h-screen bg-gray-50 text-gray-800">
+      <Navbar />
+      <main className="flex-grow">
+        <Hero />
+        <InfoSection />
+        <CTA />
+      </main>
+      <Footer />
     </div>
   );
 }
