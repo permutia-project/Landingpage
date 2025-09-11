@@ -1,6 +1,14 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh15060\viewkind0
+import React from 'react';
+
+export default function Navbar() {
+  return (
+    <nav className="bg-gray-800 text-white px-6 py-4 flex justify-between items-center">
+      <div className="text-xl font-semibold">Permutia</div>
+      <ul className="flex space-x-6">
+        <li><a href="/" className="hover:underline">Home</a></li>
+        <li><a href="/impressum" className="hover:underline">Impressum</a></li>
+        <li><a href="/datenschutz" className="hover:underline">Datenschutz</a></li>
+      </ul>
+    </nav>
+  );
 }
